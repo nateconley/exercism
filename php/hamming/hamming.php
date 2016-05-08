@@ -9,7 +9,7 @@ function distance($a, $b) {
 	$hamming_distance = 0;
 
 	for($i = 0; $i < strlen($a); ++$i) {
-		if( substr($a, $i, 1) !== substr($b, $i, 1) ) {
+		if( $a[$i] !== $b[$i] ) {
 			$hamming_distance += 1;
 		}
 	}
